@@ -1,0 +1,11 @@
+<nz-layout class="body">
+  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzWidth]="286">
+    <app-menu-left-student [isCollapsed]="isCollapsed"></app-menu-left-student>
+  </nz-sider>
+  <nz-layout>
+    <app-header-student></app-header-student>
+    <nz-content style="height: 100%; margin: 50px">
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
